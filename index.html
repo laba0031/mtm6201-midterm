@@ -9,7 +9,7 @@
 </head>
 <body class="bodyindex">
     <div class="home">
-            <nav class="nav">
+            <nav class="homenav">
                 <input type="checkbox" id="navcheck" class="navcheck">
                 <label for="navcheck" class="navtoggle">
                     <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
@@ -32,9 +32,11 @@
                             <a href="image.html" class="work">My Work</a>
                             <a href="contact.html" class="contact">Contact Me</a>
                 </div>
-                <div class="images">
-                    <img src="img/homepage1.jpg" alt="figure with roses on fire" class="homepage1">
-                    <img src="img/homepage2.jpg" alt="girl with hands coming out of wall" class="homepage2">
+                <picture>
+                    <source src="homepage1.png" media="(min-width: 1024px)"/>
+                    <source src="homepage1mobile.png" media="(max-width: 560px)"/>
+                    <img src="img/homepage1.png" alt="figure holding burning flowers">
+                </picture>
                 </div>
     </div>    
 </body>

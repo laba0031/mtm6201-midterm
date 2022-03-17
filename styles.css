@@ -137,47 +137,7 @@
             border-radius: 5px;
             
         }
-
-        .images{
-            width: 45%;
-            height: 80%;
-            position: absolute;
-            top: 20%;
-            left: 5%;
-        }
-        
-        .homepage2{
-            height: 45%;
-            position: absolute;
-            left: 53%;
-            top: 25%;
-        }
-
-        .homepage1{
-            height: 45%;
-            position: absolute;
-            left: 100%;
-            top: 17%; 
-        }
-/*creating image animation*/
-
-        .images img{
-            transform: translateX(-25%);
-            transition: top 1s, left 1s;
-        }
-        
-        .images:hover .homepage2{
-                left: 20%;
-            }
-        
-        .images:hover .homepage1{
-                top: 15%;
-                left: 120%;
-            }
     }
-
-   
-
 
 
     /*desktop main body index*/
@@ -206,45 +166,6 @@
             margin: 30px 20px;
             border-radius: 5px;
             
-        }
-    
-        .images{
-            width: 45%;
-            height: 80%;
-            position: absolute;
-            top: 5%;
-            right: 50px;
-    
-        }
-    
-        .homepage2{
-            height: 45%;
-            position: absolute;
-            left: 32%;
-            bottom: 0;
-            
-        }
-    
-        .homepage1{
-            height: 45%;
-            position: absolute;
-            left: 70%;
-            bottom: 250px;
-            
-        }
-    /*creating image animation*/
-        .images img{
-            transform: translateX(-50%);
-            transition: bottom 1s, left 1s;
-    
-        }
-    
-        .images:hover .homepage2{
-            left: 55%;
-        }
-    
-        .images:hover .homepage1{
-            bottom: 290px;
         }
     }
 
@@ -297,7 +218,7 @@
         border-radius: 16px;
         box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
     }
-
+/*making form boxes bigger and grid for desktop*/
     @media only screen and (min-width: 1024px){
       form{
         grid-template-columns: repeat(2, 1fr);
@@ -310,7 +231,7 @@
            color: #888;
            font-size:14px;
     }
-
+/*allowing form fields to stand out*/
     .form-element{
         appearance: none;
         outline: none;
@@ -320,6 +241,11 @@
         border-radius: 8px;
         padding: 12px 16px;
         background-color: #ECECEC;
+        transition: 0.6s;
+    }
+    .form-element:focus{
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
     }
     textarea{
         resize: none;
@@ -335,11 +261,19 @@
         text-align: right;
         
     }
-    
+    /*changing submit buttom to look more*/
     input[type="submit"]{
         appearance: none;
         border: none;
         outline: none;
         background:none;
-
+        padding:12px 16px;
+        background-color: #E7A48A;
+        border-radius: 8px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    input[type="submit"]:hover{
+        background-color: #995276;
     }
