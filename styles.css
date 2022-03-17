@@ -328,6 +328,9 @@ picture{
         background-color: #995276;
     }
 
+
+    /*images pages creating gallery grid*/
+
    .gallery img{
        max-width: 100%;
        height: auto;
@@ -372,6 +375,7 @@ picture{
            grid-row: span 2;
 
        }
+       /*making gallery animations*/
        .galleryitem img{
         transform: scale(1);
         transition: transform 2s;
