@@ -12,7 +12,7 @@
             <nav class="homenav">
                 <input type="checkbox" id="navcheck" class="navcheck">
                 <label for="navcheck" class="navtoggle">
-                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars"><!--hamburger menu icon svgs-->
                         <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
                     </svg>
                     <svg class="close" viewBox="0 0 384 512" width="100" title="times">
@@ -32,10 +32,17 @@
                             <a href="image.html" class="work">My Work</a>
                             <a href="contact.html" class="contact">Contact Me</a>
                 </div>
-                <picture>
-                    <source src="homepage1.png" media="(min-width: 1024px)"/>
-                    <source src="homepage1mobile.png" media="(max-width: 560px)"/>
+                
+                <!--responsive images-->
+                <picture class="hp1">
+                    <source srcset="img/homepage1.png" media="(min-width: 1024px)"/>
+                    <source srcset="img/homepage1mobile.png" media="(max-width: 560px)"/>
                     <img src="img/homepage1.png" alt="figure holding burning flowers">
+                </picture>
+                <picture class="hp2">
+                    <source srcset="img/homepage2.png" media="(min-width: 1024px)"/>
+                    <source srcset="img/homepage2mobile.png" media="(max-width: 560px)"/>
+                    <img src="img/homepage2.png" alt="figure sitting scared with figures coming out of wall">
                 </picture>
                 </div>
     </div>    
