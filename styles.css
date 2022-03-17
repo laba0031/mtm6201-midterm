@@ -53,6 +53,9 @@
     nav ul li a:hover{
         color: #E7A48A;
     } 
+    ul li.active-link>a{
+        text-decoration: underline;
+    }
 
     li{
         list-style: none;
