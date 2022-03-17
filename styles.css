@@ -182,11 +182,6 @@
         left: 10%;
         
     }
-picture{
-    transform: translateX(-50%);
-        transition: 10sec;
-
-}
     picture.hp1:hover{
         right: 25%;
         top: 5%;
